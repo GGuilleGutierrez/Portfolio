@@ -1,0 +1,65 @@
+<div class="container">
+    <video muted defaultMuted autoplay="autoplay">
+        <source src="../../../assets/background.mp4" type="video/mp4">
+        <source src="../../../assets/background.webm" type="video/webm">
+    </video>
+    <div class="header">
+        <div class="navvar">
+            <div class="logo">
+                <!-- <p>GG</p> -->
+            </div>
+            <div class="navmobile">
+                <button mat-icon-button [matMenuTriggerFor]="menu">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>
+                        <a href="#aboutme"><span>Sobre mí</span></a>
+                    </button>
+                    <button mat-menu-item>
+                        <a href="#skills"><span>Skills</span></a>
+                    </button>
+                    <button mat-menu-item>
+                        <a href="#projects"><span>Proyectos</span></a>
+                    </button>
+                </mat-menu>
+            </div>
+            <div class="nav">
+                <button mat-button>
+                    <a href="#aboutme"><span>Sobre mí</span></a>
+                </button>
+                <button mat-button>
+                    <a href="#skills"><span>Skills</span></a>
+                </button>
+                <button mat-button>
+                    <a href="#projects"><span>Proyectos</span></a>
+                </button>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="name">
+                <span>GUILLERMO</span>
+                <span>GUTIERREZ</span>
+                <p>Full Stack Web Developer</p>
+            </div>
+            <div class="redes">
+                <a href="https://api.whatsapp.com/send?phone=3516711879" target="_blank"><button mat-icon-button>
+                        <mat-icon>call</mat-icon>
+                    </button></a>
+                <a href="mailto:gguillegutierrez@gmail.com" target="_blank"><button mat-icon-button>
+                        <mat-icon>email</mat-icon>
+                    </button></a>
+                <a href="https://www.instagram.com/gguillegutierrez/" target="_blank"><button mat-icon-button>
+                        <img src="../../../assets/instagram.png" alt="">
+                    </button></a>
+                <a href="https://www.linkedin.com/in/guillermo-gutierrez-9a5160219/" target="_blank"><button
+                        mat-icon-button>
+                        <img src="../../../assets/linkedin.jpg" alt="">
+                    </button></a>
+                <a href="https://github.com/GGuilleGutierrez" target="_blank"><button mat-icon-button>
+                        <img src="../../../assets/github.jpg" alt="">
+                    </button></a>
+            </div>
+        </div>
+    </div>
+</div>

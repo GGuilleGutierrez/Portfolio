@@ -1,0 +1,22 @@
+<div id="projects" class="projects">
+  <div class="title">
+    <h2>PROYECTOS</h2>
+  </div>
+  <div class="proyectcards">
+    <mat-card *ngFor="let card of cards" class="card" [ngClass]="{'show': card.show}">
+      <mat-card-header>
+        <mat-card-title>{{card.title}}</mat-card-title>
+        <mat-card-subtitle>{{card.subtitle}}</mat-card-subtitle>
+      </mat-card-header>
+      <iframe src="../../../assets/ourcar.mp4" frameborder="0"></iframe>
+      <mat-card-content>
+        <p>{{card.text1}}</p>
+        <p>{{card.text2}}</p>
+        <p>{{card.text3}}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a href="{{card.repo}}" target="_blank"><button mat-button>REPOSITORIO</button></a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

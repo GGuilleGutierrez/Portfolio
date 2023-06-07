@@ -1,0 +1,109 @@
+.container {
+  background-image: url("../../../assets/wallpaper1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+h2 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 400;
+  color: aliceblue;
+  text-shadow: 0px 0px 10px;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img {
+  max-width: 180px;
+  max-height: 180px;
+  border-radius: 35px;
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 1s, transform 3s;
+  border: 3px solid #ccc;
+  animation: border-animation1 2s infinite;
+}
+
+@keyframes border-animation1 {
+  0% {
+    border-color: #ccc;
+  }
+
+  50% {
+    border-color: #171212;
+  }
+
+  100% {
+    border-color: #f8f1f1;
+  }
+}
+
+.description {
+  max-width: 60%;
+  font-size: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgba(194, 198, 202, 0.66);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 1s, transform 3s;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.cv {
+  background-image: url("../../../assets/wallpaper2.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(194, 198, 202, 0.66);
+  padding: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.cv a button {
+  box-shadow: 0px 0px 5px #ccc;
+}
+
+.cv a button:hover {
+  color: #ccc;
+  background-color: rgb(35, 36, 36);
+  transform: scale(1.3);
+}
+
+@media (width > 500px) {
+  .aboutme {
+    padding: 30px 0px;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+  }
+
+  .description {
+    width: 50%;
+    font-size: 15px;
+  }
+}
