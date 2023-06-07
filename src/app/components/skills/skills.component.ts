@@ -13,17 +13,19 @@ export class SkillsComponent {
   }
 
   checkScroll() {
-    const containerElement = this.elementRef.nativeElement.querySelector('.technologies', '.technologiesmobile');
-
-    if (!containerElement) {
-      return;
-    }
-
-    const containerHeight = containerElement.clientHeight;
+    const windowHeight = window.innerHeight;
     const scrollTop = document.documentElement.scrollTop;
 
-    if (scrollTop > containerHeight * 0.1) {
-      this.showSection = true;
+    const element = this.elementRef.nativeElement.querySelector('.technologies' || '.technologiesmobile')
+
+      if (!element) {
+        return;
+      }
+
+      const elementTop = element.offsetTop;
+
+      if (scrollTop > elementTop - windowHeight * 0.8) {
+        this.showSection = true;
+      }
     }
   }
-}

@@ -2,6 +2,7 @@
   background-image: url("../../../assets/wallpaper1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: auto;
 }
 
 .title {
@@ -22,6 +23,7 @@ h2 {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  height: 90%;
 }
 
 img {
@@ -61,7 +63,7 @@ img {
   transform: translateY(100%);
   transition: opacity 1.5s, transform 3s;
   border: 5px solid #171212;
-  animation: border-animation1 4s infinite;
+  animation: border-animation1 3s infinite;
 }
 
 @keyframes border-animation1 {
@@ -97,6 +99,7 @@ a {
   color: rgba(194, 198, 202, 0.66);
   padding: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  height: 10%;
 }
 
 .cv a button {
@@ -117,8 +120,23 @@ a {
     height: auto;
   }
 
+  img {
+    opacity: 0;
+    transform: translateX(150%);
+    transition: opacity 1.5s, transform 3s;
+  }
+
   .description {
     width: 50%;
     font-size: 15px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1.5s, transform 3s;
   }
+
+  .show {
+    opacity: 1;
+    transform: translateY(0) translateX(0);
+  }
+
 }

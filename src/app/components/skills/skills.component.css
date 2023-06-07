@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../../assets/wallpaper4.jpg");
 }
 
@@ -17,9 +18,10 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
     opacity: 0;
-    transform: translateX(100%);
-    transition: opacity 1s, transform 5s;
+    transform: translateY(100%);
+    transition: opacity 1s, transform 4s;
 }
 
 .show {
@@ -56,11 +58,10 @@ img:hover {
         flex-direction: row;
         justify-content: center;
         height: 200px;
-        padding-bottom: 20px;
         flex-wrap: wrap;
         opacity: 0;
-        transform: translateX(100%);
-        transition: opacity 1s, transform 8s;
+        transform: translateX(180%);
+        transition: opacity 1s, transform 3.5s;
     }
 
     .show {
