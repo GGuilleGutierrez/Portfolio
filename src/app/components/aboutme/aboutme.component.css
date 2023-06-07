@@ -29,8 +29,8 @@ img {
   max-height: 180px;
   border-radius: 35px;
   opacity: 0;
-  transform: translateX(-100%);
-  transition: opacity 1s, transform 3s;
+  transform: translateY(-100%);
+  transition: opacity 1.5s, transform 3s;
   border: 3px solid #ccc;
   animation: border-animation1 2s infinite;
 }
@@ -57,10 +57,9 @@ img {
   border-radius: 10px;
   padding: 10px;
   margin-bottom: 10px;
-
   opacity: 0;
-  transform: translateX(100%);
-  transition: opacity 1s, transform 3s;
+  transform: translateY(100%);
+  transition: opacity 1.5s, transform 3s;
   border: 5px solid #171212;
   animation: border-animation1 4s infinite;
 }
