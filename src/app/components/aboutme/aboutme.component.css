@@ -61,6 +61,22 @@ img {
   opacity: 0;
   transform: translateX(100%);
   transition: opacity 1s, transform 3s;
+  border: 5px solid #171212;
+  animation: border-animation1 4s infinite;
+}
+
+@keyframes border-animation1 {
+  0% {
+    border-color: #171212;
+  }
+
+  50% {
+    border-color: #f8f1f1;
+  }
+
+  100% {
+    border-color: #ccc;
+  }
 }
 
 .show {
