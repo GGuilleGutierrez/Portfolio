@@ -17,7 +17,7 @@ export class ProjectsComponent {
       video: "https://www.canva.com/design/DAFlE0MvKMI/ohGutFzz6sYKEijGx9GYOQ/watch?utm_content=DAFlE0MvKMI&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel",
       text1: "Aplicación web tipo e-commerce simulando pequeña empresa familiar.",
       text2: "Te recibe una HomePage, tiene Login, Register y ProductsPage con filtro. Se puede valorar los productos con un rating de estrellas, y la compra se hace en una CartPage a través de Mercado Pago.Cuenta con funcionalidades especiales para admins: su propia RegisterPage privada, CRUD (crear, leer, editar y eliminar) de productos y disponibilidad de todos los usuarios creados con posibilidad de eliminarlos.",
-      text3: "-Back-end: servidor desarrollado en JavaScript corrido con Node, se implementó: express, sequelize, jwt, bcrypt, etc. -Front-end: desarrollado en Angular (TypeScript, HTML5, CSS3), implementando: HttpClient, Angular material, Angular routing, etc. -Base de datos: data guardada en BBDD de MySql, conectada a la API de node.",
+      text3: "-Back-end: servidor desarrollado en JavaScript corrido con Node, se implementó: express, sequelize, jwt, bcrypt, etc. -Front-end: desarrollado en Angular (TypeScript, HTML5, CSS3), implementando: HttpClient, Angular material, Angular routing, Reactive Forms,  etc. -Base de datos: data guardada en BBDD de MySql, conectada a la API de node.",
       repo: "https://github.com/GGuilleGutierrez/FinalProyect_Frontend"
     }
   ]
