@@ -8,7 +8,8 @@
         <mat-card-title>{{card.title}}</mat-card-title>
         <mat-card-subtitle>{{card.subtitle}}</mat-card-subtitle>
       </mat-card-header>
-      <iframe src="{{card.video}}" frameborder="0"></iframe>
+      <iframe *ngIf="card.id == 1" src="../../../assets/ourcar.mp4" frameborder="0"></iframe>
+      <iframe *ngIf="card.id == 2" src="../../../assets/apod.mp4" frameborder="0"></iframe>
       <mat-card-content>
         <p>{{card.text1}}</p>
         <p>{{card.text2}}</p>
@@ -16,7 +17,7 @@
       </mat-card-content>
       <mat-card-actions>
         <a href="{{card.repo}}" target="_blank"><button mat-button>REPOSITORIO</button></a>
-        <a href="{{card.deploy}}" target="_blank"><button mat-button>REPOSITORIO</button></a>
+        <a *ngIf="card.deploy" href="{{card.deploy}}" target="_blank"><button mat-button>DEPLOY</button></a>
       </mat-card-actions>
     </mat-card>
   </div>
