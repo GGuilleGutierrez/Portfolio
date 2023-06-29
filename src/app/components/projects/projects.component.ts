@@ -18,7 +18,20 @@ export class ProjectsComponent {
       text1: "Aplicación web tipo e-commerce simulando pequeña empresa familiar.",
       text2: "Te recibe una HomePage, tiene Login, Register y ProductsPage con filtro. Se puede valorar los productos con un rating de estrellas, y la compra se hace en una CartPage a través de Mercado Pago.Cuenta con funcionalidades especiales para admins: su propia RegisterPage privada, CRUD (crear, leer, editar y eliminar) de productos y disponibilidad de todos los usuarios creados con posibilidad de eliminarlos.",
       text3: "-Back-end: servidor desarrollado en JavaScript corrido con Node, se implementó: express, sequelize, jwt, bcrypt, etc. -Front-end: desarrollado en Angular (TypeScript, HTML5, CSS3), implementando: HttpClient, Angular material, Angular routing, Reactive Forms,  etc. -Base de datos: data guardada en BBDD de MySql, conectada a la API de node.",
-      repo: "https://github.com/GGuilleGutierrez/FinalProyect_Frontend"
+      repo: "https://github.com/GGuilleGutierrez/FinalProyect_Frontend",
+      deploy: ""
+    },
+    {
+      id: 2,
+      show: false,
+      title: "APOD",
+      subtitle: "Angular",
+      video: "https://www.canva.com/design/DAFnO8CpzO4/hY9OvuBQ2AhpMoC8psnaaQ/edit?utm_content=DAFnO8CpzO4&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+      text1: "Aplicación web que renderiza los datos de NASA APOD",
+      text2: "Te recibe un banner, en el cual se presenta información útil sobre NASA APOD. Y luego se puede encontrar el componente de navegación para realizar las distintas consultas disponiles a la API de NASA APOD.",
+      text3: "-Back-end: consume API pública de NASA. -Front-end: desarrollado en Angular (TypeScript, HTML5, CSS3), implementando: TailwindCSS, HttpClient, Angular material, Angular Animations, Reactive Forms,  etc.",
+      repo: "https://github.com/GGuilleGutierrez/NASA-APOD",
+      deploy: "https://apod-gg.vercel.app/"
     }
   ]
 
