@@ -30,6 +30,17 @@ export class ProjectsComponent {
       text3: "-Back-end: consume API pública de NASA. -Front-end: desarrollado en Angular (TypeScript, HTML5, CSS3), implementando: TailwindCSS, HttpClient, Angular material, Angular Animations, Reactive Forms,  etc.",
       repo: "https://github.com/GGuilleGutierrez/NASA-APOD",
       deploy: "https://apod-gg.vercel.app/"
+    },
+    {
+      id: 3,
+      show: false,
+      title: "Portfolio",
+      subtitle: "React",
+      text1: "Plantilla de portfolio web",
+      text2: "Una SPA que funciona como un portfolio web dinámico. Los datos son traídos de un JSON desde MyJsonServer, que simula una base de datos.",
+      text3: "-Front-end: desarrollado en React (JavaScript, HTML5, CSS3) inicializado en Vite, implementando: Peticiones AJAX, etc.",
+      repo: "https://github.com/GGuilleGutierrez/Guillermo-Gutierrez-entrega03",
+      deploy: "https://gguillegutierrez.github.io/Guillermo-Gutierrez-entrega03/"
     }
   ]
 
